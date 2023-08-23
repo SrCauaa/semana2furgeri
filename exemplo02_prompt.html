@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Utilize os botões para entrada de dados:</h2>
+    <button onclick="document.getElementById('v1').innerHTML = prompt('forneça o valor 1')">digite o valor 1</button>
+    <button onclick="document.getElementById('v2').innerHTML = prompt('forneça o valor 2')">digite o valor 2</button>
+    <!-- o botao abaixo realiza a soma dos dois valores-->
+    <button onclick="document.getElementById('r').innerHTML = 
+    parseInt(document.getElementById('v1').innerHTML) + 
+    parseInt(document.getElementById('v2').innerHTML)">somar</button>
+    <button 
+        onclick="document.getElementById('v1').innerHTML = '';
+        document.getElementById('v2').innerHTML = '';
+        document.getElementById('r').innerHTML = ''"> 
+        limpar
+    </button>
+    <p id="v1"></p>
+    <p id="v2"></p>
+    <p id="r"></p>
+</body>
+</html>

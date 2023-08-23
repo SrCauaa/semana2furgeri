@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade um - calculadora</title>
+    <script> function escolher(){
+        
+        function somar(){ a = b + c}
+        function subtrair(){a = b - c}
+        function multiplicar(){a = b * c}
+        function dividir(){a = b / c}
+        f1.total.value = a
+        f1.num1.value = b
+        f1.num2.value = c 
+    } 
+    </script>
+</head>
+<body>
+    <form name="f1">
+        <table>
+            <tr><td>Num1</td> <td><input type="number" name="num1" id="n1"></td></tr>
+            <tr><td>Num2</td> <td><input type="number" name="num2" id="n2"></td></tr>
+            <tr><td>Resultado</td> <td><input type="number" name="total" id="t" readonly></td></tr>
+        </table>   
+    </form>
+    Operação 
+    <select>    
+        <option selected value="esc" onchange="escolher()"></option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        
+    </select>
+    <br>
+    <button>Calcular</button>
+    <button>Limpar</button>
+</body>
+</html>

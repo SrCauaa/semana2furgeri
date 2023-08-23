@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function calcular(op){
+        if(op=='+'){
+            f1.total.value = parseFloat(f1.num1.value) + parseFloat (f1.num2.value)
+        }
+        else if(op=='-'){
+            f1.total.value = parseFloat(f1.num1.value) - parseFloat (f1.num2.value)
+        }
+        else if(op=='*'){f1.total.value = parseFloat(f1.num1.value) * parseFloat (f1.num2.value)
+    }
+    else if(op=='/'){f1.total.value = parseFloat(f1.num1.value) / parseFloat (f1.num2.value)
+    }}
+    function somar(){ f1.total.value = parseFloat(f1.num1.value) + parseFloat (f1.num2.value)}
+    function subtrair(){f1.total.value = parseFloat(f1.num1.value) - parseFloat (f1.num2.value)}
+    function multiplicar(){f1.total.value = parseFloat(f1.num1.value) * parseFloat (f1.num2.value)}
+    function dividir(){f1.total.value = parseFloat(f1.num1.value) / parseFloat (f1.num2.value)}
+</script>
+</head>
+
+
+<body>
+    <h2>Simulação de uma calculadora simples</h2>
+    <form name="f1">
+        <table>
+            <tr><td>Num1:</td> <td><input type="number" name="num1" id="n1"></td></tr>
+            <tr><td>Num2:</td> <td><input type="number" name="num2" id="n2"></td></tr>
+            <tr><td>Total</td> <td><input type="number" name="total" id="t" readonly></td></tr>
+        </table>    
+        <input type="reset" value="C" onclick="document.getElementById('n1').focus()">
+    </form>
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
+</body>
+</html>

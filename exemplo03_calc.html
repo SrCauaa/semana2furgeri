@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+</head>
+<body>
+    <h2>Simulação de uma calculadora simples</h2>
+    <form name="f1">
+        <table>
+            <tr><td>Num1:</td> <td><input type="number" name="num1" id="n1"></td></tr>
+            <tr><td>Num2:</td> <td><input type="number" name="num2" id="n2"></td></tr>
+            <tr><td>Total</td> <td><input type="number" name="total" id="t" readonly></td></tr>
+        </table>    
+        <input type="reset" value="limpar" onclick="document.getElementById('n1').focus()">
+    </form>
+        <button onclick="f1.total.value = parseInt(f1.num1.value) + parseInt(f1.num2.value)">+</button>
+        <button onclick="document.getElementById('t').value = parseInt(document.getElementById('n1').value) - parseInt(document.getElementById('n2').value)">-</button>
+        <button onclick="f1.total.value = parseInt(f1.num1.value) * parseInt(f1.num2.value)">*</button>
+        <button onclick="f1.total.value = parseInt(f1.num1.value) / parseInt(f1.num2.value)">/</button>
+</body>
+</html>

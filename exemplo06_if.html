@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor por extenso</title>
+<script>/*
+function converter(){
+    if(f.numero.value==0){
+        f.texto.value='Zero';
+    }
+    else if(f.numero.value==1){
+        f.texto.value='um';
+    }
+    else if(f.numero.value==2){
+        f.texto.value='dois';
+    }else if(f.numero.value==3){
+        f.texto.value='três';
+    }else if(f.numero.value==4){
+        f.texto.value='quatro';
+    }else if(f.numero.value==5){
+        f.texto.value='cinco';
+    }else if(f.numero.value==6){
+        f.texto.value='seis';
+    }else if(f.numero.value==7){
+        f.texto.value='sete';
+    }else if(f.numero.value==8){
+        f.texto.value='oito';
+    }else if(f.numero.value==9){
+        f.texto.value='nove';
+    }
+}*/function converter(){
+    let v = f.numero.value;
+    let s = "";
+    if(v==0)s='Zero'
+    else if(v==1)s='um';
+    else if(v==2)s='dois';
+    else if(v==3)s='três';
+    else if(v==4)s='quatro';
+    else if(v==5)s='cinco';
+    else if(v==6)s='seis';
+    else if(v==7)s='sete';
+    else if(v==8)s='oito';
+    else if(v==9)s='nove';
+    f.texto.value=s
+}
+</script>
+</head>
+<body>
+    <h2>Uso do if para conversão numérica</h2>
+    <form name="f">
+        <select name="numero" onchange="converter()">
+            <option selected value="esc">Escolha um número</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <input type="text" name="texto">
+    </form>
+</body>
+</html>
